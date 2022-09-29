@@ -11,8 +11,8 @@ You can fork it from my Github and run it on your local computer. Just make sure
 ## View Project
 You can view this project on my Github
 
-Vew it live here: [Huddle]([website link])
+Vew it live here: [Huddle]([website-link])
 
-Read the case study on my [Substack]([website link])
+Read the case study on my [Substack]([website-link])
 
-View it on my [Frontend Mentor]([website link]) page
+View it on my [Frontend Mentor]([website-link]) page
