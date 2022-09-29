@@ -1,22 +1,11 @@
-@font-face {
-    font-family: "MonoLisa Black";
-    src: local("MonoLisa Black"), local("MonoLisa-Black"),
-        local("MonoLisa-Black"), url(../fonts/MonoLisa-Black.woff2) format("woff2");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
 
 }
 
-@font-face {
-    font-family: "MonoLisa Bold";
-    src: local("MonoLisa Bold"), local("MonoLisa-Bold"),
-        local("MonoLisa-Bold"), url(../fonts/MonoLisa-Bold.woff2) format("woff2");
-
+.body-copy {
+    font-family: 'Poppins', sans-serif;
 }
-
-@font-face {
-    font-family: "MonoLisa Medium";
-    src: local("MonoLisa Medium"), local("MonoLisa-Medium"),
-        local("MonoLisa-Medium"), url(../fonts/MonoLisa-Medium.woff2) format("woff2");
-
-}
-
-
