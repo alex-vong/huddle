@@ -1,14 +1,14 @@
-
 /* RESET */
 @import 'meyer-reset.css';
 @import 'setup.css';
 
-@import 'developer-styles.css'; 
+@import 'developer-styles.css';
 
 
 
 /* SETTINGS */
-@import 'settings.css'; /* variables/ etc */
+@import 'settings.css';
+/* variables/ etc */
 
 
 /* STRUCTURE */
@@ -38,9 +38,290 @@
 
 /* SITE SECTIONS */
 
-h1 {
-   color: red;
+body {
+    /*position: relative;*/
 }
+
+
+/*masthead*/
+
+header {
+    position: absolute;
+    inset: 0;
+
+    /*margin-top: 40px;*/
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+masthead picture img {
+    max-width: 120px;
+    height: auto;
+
+}
+
+.masthead-logo {
+    align-self: center;
+}
+
+
+
+
+/*landing*/
+
+.landing-page {
+    background: #edfbfe url("../images/bg-hero-mobile.svg") no-repeat center center / cover;
+    position: relative;
+    padding-top: 50px;
+}
+
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 30px;
+    gap: 60px;
+    text-align: center;
+
+}
+
+
+.landing-container .landing-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.landing-container .landing-text .body-copy {
+    font-weight: 500;
+}
+
+.btn-pink {
+    background-color: var(--highlighter);
+    border: none;
+    padding: 18px 60px;
+    font-size: 16px;
+}
+
+.landing-container a,
+.cta-container a {
+    display: flex;
+    align-self: center;
+    color: var(--white);
+
+}
+
+/*card grid*/
+
+.card-grid {
+    margin: 60px 0;
+
+}
+
+.card-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+card,
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid var(--white);
+    border-radius: 1rem;
+    box-shadow: 1px 2px 5px 1px rgba(30, 30, 30, 0.1);
+    align-items: center;
+    text-align: center;
+    padding: 40px 30px;
+
+}
+
+card h3 {
+    margin-top: 20px;
+}
+
+
+/*cta*/
+
+.cta {
+    /*   position: absolute;
+   top: 0;
+   left: 0;*/
+
+    transform: translateY(100px);
+    z-index: 1000;
+}
+
+.cta-container {
+    background-color: white;
+}
+
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--marker);
+    padding: 150px 0 40px;
+
+    position: relative;
+    z-index: -1
+}
+
+footer .body-copy {
+    color: var(--white);
+}
+
+
+footer picture img {
+    max-height: 30px;
+    width: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px 0;
+
+}
+
+.footer-main-stuff {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer .contact img {
+    padding-top: 5px;
+}
+
+footer .company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+footer .social-media-stuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .social-media-stuff .sm-handles {
+    display: flex;
+    gap: 20px;
+}
+
+footer .social-media-stuff .sm-handles i {
+    font-size: 1.75rem;
+    color: var(--white);
+
+    border: 1px solid var(--white);
+    padding: 0.5em 0.6em;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+   .landing-page inner-column {
+      width: min(90%, 1400px);
+   }
+
+   .landing-page .landing-container {
+      flex-direction: row;
+      justify-content: space-between;
+      gap:  0px;
+      text-align: left;
+      padding: 60px 0;
+   }
+
+   .landing-page .landing-container .landing-img img {
+/*      height: 280px;
+      max-height: 320px;*/
+      max-height: clamp(280px, 35vw, 380px);
+      width: auto;
+   }
+
+   .landing-page .landing-container .landing-text {
+
+      gap: 15px;
+      width: 40%;
+   }
+
+   .landing-page .landing-container .landing-img {
+      width: 40%;
+   }
+
+   .landing-page .heading {
+      font-size: clamp(22px, 2vw, 30px);
+   }
+
+   .landing-page .body-copy {
+      font-size: clamp(14px, 2.5vw, 15px)
+   }
+
+   .landing-page .landing-container .landing-img picture {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   .btn-pink {
+      padding: 12px 36px;
+      font-size: 12px;
+
+   }
+
+   .landing-container a {
+      align-self: start;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
