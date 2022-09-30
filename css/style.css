@@ -331,6 +331,7 @@ footer .social-media-stuff .sm-handles i {
 
    .card-text .body-copy {
       width: 50ch;
+      width: clamp(30ch, 40vw, 50ch);
       font-size: 14px;
       color: var(--pen);
    }
