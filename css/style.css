@@ -325,12 +325,14 @@ footer .social-media-stuff .sm-handles i {
       align-items: start;
    }
 
+
+
    .card-text .heading {
       font-size: 20px;
+      margin-top: 0;
    }
 
    .card-text .body-copy {
-      width: 50ch;
       width: clamp(30ch, 40vw, 50ch);
       font-size: 14px;
       color: var(--pen);
@@ -342,7 +344,6 @@ footer .social-media-stuff .sm-handles i {
    }
 
    card picture img{
-      max-width: 275px;
       max-width: 260px;
       margin: auto;
    }
