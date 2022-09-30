@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap');
 
 
-h1 {
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 30px;
+}
+
+
+
+.body-copy {
     font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+
+    line-height: 1.4;
+    color: var(--marker);
 
 }
 
-.body-copy {
-    font-family: 'Poppins', sans-serif;
+.link-copy {
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 15px;
+    color: var(--white);
+
+}
+
+.btn {
+    font-family: 'Open Sans', sans-serif;
+
 }
