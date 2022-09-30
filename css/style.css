@@ -253,7 +253,7 @@ footer .social-media-stuff .sm-handles i {
 
 @media (min-width: 768px) {
 
-   .landing-page inner-column {
+   .landing-page inner-column, header inner-column{
       width: min(90%, 1200px);
    }
 
