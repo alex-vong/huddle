@@ -286,7 +286,7 @@ footer .social-media-stuff .sm-handles i {
       font-size: clamp(22px, 2vw, 30px);
    }
 
-   .landing-page .body-copy {
+   .body-copy {
       font-size: clamp(14px, 2.5vw, 15px)
    }
 
@@ -304,6 +304,38 @@ footer .social-media-stuff .sm-handles i {
    .landing-container a {
       align-self: start;
    }
+
+
+
+   card {
+      flex-direction: row;
+      text-align: left;
+      flex-basis: 100%;
+   }
+
+   .card-grid-container card:nth-child(odd) {
+      flex-direction: row-reverse;
+   }
+
+   .card-text {
+      flex-grow: 3;
+   }
+
+   .card-text .heading {
+      font-size: 20px;
+   }
+
+   .card-text .body-copy {
+      width: 50ch;
+      font-size: 14px;
+      color: var(--pen);
+   }
+
+   card picture img{
+      max-width: 275px;
+   }
+
+
 
 }
 
