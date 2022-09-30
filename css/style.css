@@ -254,7 +254,7 @@ footer .social-media-stuff .sm-handles i {
 @media (min-width: 768px) {
 
    .landing-page inner-column {
-      width: min(90%, 1400px);
+      width: min(90%, 1200px);
    }
 
    .landing-page .landing-container {
@@ -318,7 +318,11 @@ footer .social-media-stuff .sm-handles i {
    }
 
    .card-text {
-      flex-grow: 3;
+      display: flex;
+      flex-direction: column;
+      gap:  10px;
+      flex-grow: 1;
+      align-items: start;
    }
 
    .card-text .heading {
@@ -331,8 +335,14 @@ footer .social-media-stuff .sm-handles i {
       color: var(--pen);
    }
 
+   card picture {
+      flex-grow:  1;
+      margin: auto;
+   }
+
    card picture img{
       max-width: 275px;
+      margin: auto;
    }
 
 
