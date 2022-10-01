@@ -112,13 +112,13 @@ masthead picture img {
     border: none;
     padding: 18px 60px;
     font-size: 16px;}
+    font-size: 16px;
 
 .landing-container a,
 .cta-container a {
     display: flex;
     align-self: center;
     color: var(--white);
-
 }
 
 /*card grid*/
