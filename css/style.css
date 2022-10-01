@@ -147,13 +147,14 @@ card,
 
 }
 
+.card-text {
+
 card h3 {
     margin-top: 20px;
 }
 
 
 /*cta*/
-
 .cta {
     /*   position: absolute;
    top: 0;
