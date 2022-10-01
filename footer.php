@@ -17,6 +17,7 @@
 			</picture>
 
 			<p class="body-copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta dolorum sunt voluptas ratione dolorem sed voluptatum iure modi numquam nulla.</p>
+			<p class="body-copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque enim assumenda sint recusandae consequatur, dolorem.</p>
 		</div>
 
 		<div class="email contact">
@@ -45,7 +46,6 @@
 			<li class="body-copy">Contact Us</li>
 		</ul>
 	</section>
-
 
 	<section class="social-media-stuff">
 		<div class="sm-handles">
