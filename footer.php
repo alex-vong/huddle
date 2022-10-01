@@ -1,4 +1,11 @@
+	<picture>
+		<img src="images/logo-footer.svg" alt="footer-company-logo" class="logo">
+	</picture>
+
+
 <section class="footer-container">
+
+
 	<section class="footer-main-stuff">
 		<picture>
 			<img src="images/logo-footer.svg" alt="footer-company-logo" class="logo">
@@ -16,7 +23,6 @@
 			<picture>
 				<img src="images/icon-phone.svg" alt="footer-company-number">
 			</picture>
-
 			<a href="tel:+1234567891" class="body-copy">+123-456-7891</a>
 		</div>
 
