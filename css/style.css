@@ -38,10 +38,6 @@
 
 /* SITE SECTIONS */
 
-body {
-    /*position: relative;*/
-}
-
 
 /*masthead*/
 
@@ -72,7 +68,10 @@ masthead picture img {
     align-self: center;
 }
 
-
+.landing-container, .landing-container .landing-text, .card-grid-container, card, .cta-container, .card-text {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /*landing*/
@@ -85,8 +84,8 @@ masthead picture img {
 
 
 .landing-container {
-    display: flex;
-    flex-direction: column;
+/*    display: flex;
+    flex-direction: column;*/
     padding: 80px 30px;
     gap: 60px;
     text-align: center;
@@ -95,14 +94,16 @@ masthead picture img {
 
 
 .landing-container .landing-text {
-    display: flex;
-    flex-direction: column;
+/*    display: flex;
+    flex-direction: column;*/
     justify-content: center;
     gap: 30px;
+
+
 }
 
 .landing-container .landing-text .body-copy {
-      font-size: 20px;
+    font-size: 20px;
     font-weight: 500;
 
 }
@@ -111,14 +112,15 @@ masthead picture img {
     background-color: var(--highlighter);
     border: none;
     padding: 18px 60px;
-    font-size: 16px;}
     font-size: 16px;
+}
 
 .landing-container a,
 .cta-container a {
     display: flex;
     align-self: center;
     color: var(--white);
+
 }
 
 /*card grid*/
@@ -129,15 +131,15 @@ masthead picture img {
 }
 
 .card-grid-container {
-    display: flex;
-    flex-direction: column;
+/*    display: flex;
+    flex-direction: column*/;
     gap: 60px;
 }
 
 card,
 .cta-container {
-    display: flex;
-    flex-direction: column;
+/*    display: flex;
+    flex-direction: column;*/
     gap: 20px;
     border: 1px solid var(--white);
     border-radius: 1rem;
@@ -149,6 +151,10 @@ card,
 }
 
 .card-text {
+/*    display: flex;
+    flex-direction: column;*/
+    gap: 10px;
+}
 
 card h3 {
     margin-top: 20px;
@@ -156,10 +162,8 @@ card h3 {
 
 
 /*cta*/
+
 .cta {
-    /*   position: absolute;
-   top: 0;
-   left: 0;*/
 
     transform: translateY(100px);
     z-index: 1000;
@@ -173,12 +177,18 @@ card h3 {
 
 /*footer*/
 
+/*footer, .footer-container, .footer-container .top, .footer-container section,
+.footer-facts-stuff ul, footer .contact, footer .company-info, footer .social-media-stuff {
+      display: flex;
+    flex-direction: column;
+}*/
+
 footer {
     display: flex;
     flex-direction: column;
 
     background-color: var(--marker);
-    padding: 150px 0 40px;
+    padding: 200px 0 40px;
 
     position: relative;
     z-index: -1
@@ -202,7 +212,18 @@ footer picture img {
 
 }
 
-.footer-main-stuff {
+.footer-container .top {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+
+}
+
+
+
+.footer-container section,
+.footer-facts-stuff ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -229,8 +250,7 @@ footer .company-info {
 footer .social-media-stuff {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     gap: 20px;
 }
 
@@ -255,120 +275,177 @@ footer .social-media-stuff .sm-handles i {
 
 @media (min-width: 768px) {
 
-   .landing-page inner-column, header inner-column{
-      width: min(90%, 1200px);
-   }
+    .landing-page inner-column,
+    header inner-column,
+    footer inner-column {
+        width: min(90%, 1200px);
+    }
 
-   .landing-page .landing-container {
-      flex-direction: row;
-      justify-content: space-between;
-      gap:  0px;
-      text-align: left;
-      padding: 60px 0;
-   }
+    .landing-page .landing-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+        text-align: left;
+        padding: 60px 0;
+    }
 
-   .landing-page .landing-container .landing-img img {
-/*      height: 280px;
+    .landing-page .landing-container .landing-img img {
+        /*      height: 280px;
       max-height: 320px;*/
-      max-height: clamp(280px, 35vw, 380px);
-      width: auto;
-   }
+        max-height: clamp(280px, 35vw, 380px);
+        width: auto;
+    }
 
-   .landing-page .landing-container .landing-text {
+    .landing-page .landing-container .landing-text {
 
-      gap: 15px;
-      width: 40%;
-   }
+        gap: 15px;
+        width: 40%;
+    }
 
-   .landing-page .landing-container .landing-img {
-      width: 40%;
-   }
+    .landing-page .landing-container .landing-img {
+        width: 40%;
+    }
 
-   .landing-page .heading {
-      font-size: clamp(22px, 2vw, 30px);
-   }
+    .landing-page .heading {
+        /*font-size: clamp(22px, 2vw, 30px);*/
+    }
 
-   .body-copy {
-      font-size: clamp(14px, 2.5vw, 15px)
-   }
+    .landing-page .landing-container .landing-text .body-copy {
+        font-size: clamp(14px, 2.5vw, 15px)
+    }
 
-   .landing-page .landing-container .landing-img picture {
-      display: flex;
-      justify-content: flex-end;
-   }
+    .landing-page .landing-container .landing-img picture {
+        display: flex;
+        justify-content: flex-end;
+    }
 
-   .btn-pink {
-      padding: 12px 36px;
-      font-size: 12px;
+    .btn-pink {
+        padding: 12px 36px;
+        font-size: 12px;
 
-   }
+    }
 
-   .landing-container a {
-      align-self: start;
-   }
+    .landing-container a {
+        align-self: start;
+    }
+
+    card {
+        flex-direction: row;
+        text-align: left;
+        flex-basis: 100%;
+    }
+
+    .card-grid-container card:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .card-text {
+        flex-grow: 1;
+        align-items: start;
+    }
+
+    .card-text .heading {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .card-text .body-copy {
+        width: clamp(30ch, 40vw, 50ch);
+        font-size: 14px;
+        color: var(--pen);
+    }
+
+    card picture {
+        flex-grow: 1;
+        margin: auto;
+    }
+
+    card picture img {
+        max-width: 260px;
+        margin: auto;
+    }
 
 
-
-   card {
-      flex-direction: row;
-      text-align: left;
-      flex-basis: 100%;
-   }
-
-   .card-grid-container card:nth-child(odd) {
-      flex-direction: row-reverse;
-   }
-
-   .card-text {
-      display: flex;
-      flex-direction: column;
-      gap:  10px;
-      flex-grow: 1;
-      align-items: start;
-   }
+    .cta-container {
+        width: 80%;
+        margin: auto;
+    }
 
 
+    .footer-container {
 
-   .card-text .heading {
-      font-size: 20px;
-      margin-top: 0;
-   }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px 20px;
+        /*      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));*/
+    }
 
-   .card-text .body-copy {
-      width: clamp(30ch, 40vw, 50ch);
-      font-size: 14px;
-      color: var(--pen);
-   }
+    .footer-container .footer-facts-stuff {
+        gap: 20px;
 
-   card picture {
-      flex-grow:  1;
-      margin: auto;
-   }
+    }
 
-   card picture img{
-      max-width: 260px;
-      margin: auto;
-   }
+    .footer-facts-stuff ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: end;
+    }
+
+    footer .social-media-stuff {
+         grid-column: 1/-1;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
 }
 
 
+@media (min-width: 1000px) {
+
+  .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+
+
+    }
+
+    .footer-container .footer-facts-stuff {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .footer-facts-stuff ul {
+        justify-content: start;
+
+        align-items: start;
+    }
+
+    footer .social-media-stuff {
+         grid-column: 3;
+               justify-content: space-between;
+        align-items: end;
+    }
+    footer .footer-container .social-media-stuff .sm-handles i {
+      font-size:  1.25rem;
+    }
+
+        .footer-container .footer-facts-stuff {
+        gap: 60px;
+
+    }
+
+
+    footer span {
+      display: block;
+      margin-top: 10px
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
