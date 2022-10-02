@@ -186,16 +186,24 @@ card h3 {
 }*/
 
 footer {
+footer,
+.footer-container,
+.footer-container section,
+.footer-facts-stuff ul,
+footer .contact,
+footer .company-info,
+footer .social-media-stuff {
     display: flex;
     flex-direction: column;
+}
 
+footer {
     background-color: var(--marker);
     padding: 200px 0 40px;
 
     position: relative;
     z-index: -1
 }
-
 footer .body-copy {
     color: var(--white);
 }
