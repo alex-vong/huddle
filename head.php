@@ -11,9 +11,9 @@
 		<meta property="og:type" content="">
 		<meta property="og:url" content="">
 
-		<meta property="og:image" content="[[meta-image-here]]"  />
-		<meta property="og:image:type" content="[[meta-image-here]]]" />
-		<link rel="shortcut icon" type="image/jpg" href=[[]] />
+		<meta property="og:image" content="images/meta-image.png"  />
+		<meta property="og:image:type" content="images/meta-image.png]" />
+		<link rel="shortcut icon" type="image/jpg" href="images/favicon-32x32.png" />
 
 		<link rel='stylesheet' href='css/style.css'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
