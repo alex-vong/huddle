@@ -5,4 +5,13 @@
 	border-radius: 1.5rem;
 	box-shadow: 1px 1px 10px 1px rgba(25, 25, 25, .35);
 	font-size: 15px;
+	z-index: 1000;
+}
+
+
+a.btn:hover {
+	background-color: var(--marker);
+	color: var(--white);
+	border: none;
+
 }
