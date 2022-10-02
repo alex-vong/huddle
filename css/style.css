@@ -68,8 +68,11 @@ masthead picture img {
     align-self: center;
 }
 
-.landing-container, .landing-container .landing-text, .card-grid-container, card, .cta-container, .card-text {
 .landing-container,
+.landing-container .landing-text,
+.card-grid-container,
+card,
+.cta-container,
 .card-text {
     display: flex;
     flex-direction: column;
@@ -77,6 +80,7 @@ masthead picture img {
 
 
 /*landing*/
+
 .landing-page {
     background: #edfbfe url("../images/bg-hero-mobile.svg") no-repeat center center / cover;
     position: relative;
@@ -85,7 +89,7 @@ masthead picture img {
 
 
 .landing-container {
-/*    display: flex;
+    /*    display: flex;
     flex-direction: column;*/
     padding: 80px 30px;
     gap: 60px;
@@ -95,8 +99,7 @@ masthead picture img {
 
 
 .landing-container .landing-text {
-/*    display: flex;
-    flex-direction: column;*/
+
     justify-content: center;
     gap: 30px;
 
@@ -104,7 +107,6 @@ masthead picture img {
 }
 
 .landing-container .landing-text .body-copy {
-    font-size: 20px;
     font-size: clamp(16px, 1.75vw, 18px);
     font-weight: 500;
 
@@ -114,7 +116,6 @@ masthead picture img {
     background-color: var(--highlighter);
     border: none;
     padding: 18px 60px;
-    font-size: 16px;
     font-size: clamp(14px, 1.5vw, 16px);
 }
 
@@ -123,6 +124,7 @@ masthead picture img {
     display: flex;
     align-self: center;
     color: var(--white);
+
 }
 
 /*card grid*/
@@ -133,15 +135,12 @@ masthead picture img {
 }
 
 .card-grid-container {
-/*    display: flex;
-    flex-direction: column*/;
     gap: 60px;
 }
 
 card,
 .cta-container {
-/*    display: flex;
-    flex-direction: column;*/
+
     gap: 20px;
     border: 1px solid var(--white);
     border-radius: 1rem;
@@ -152,9 +151,12 @@ card,
 
 }
 
+.cta-container {
+   padding: 50px 30px;
+}
+
 .card-text {
-/*    display: flex;
-    flex-direction: column;*/
+
     gap: 10px;
 }
 
@@ -171,6 +173,10 @@ card h3 {
     z-index: 1000;
 }
 
+.cta .heading {
+   font-size: clamp(22px, 2vw, 24px);
+}
+
 .cta-container {
     background-color: white;
 }
@@ -179,13 +185,6 @@ card h3 {
 
 /*footer*/
 
-/*footer, .footer-container, .footer-container .top, .footer-container section,
-.footer-facts-stuff ul, footer .contact, footer .company-info, footer .social-media-stuff {
-      display: flex;
-    flex-direction: column;
-}*/
-
-footer {
 footer,
 .footer-container,
 .footer-container section,
@@ -204,6 +203,7 @@ footer {
     position: relative;
     z-index: -1
 }
+
 footer .body-copy {
     color: var(--white);
 }
@@ -215,35 +215,23 @@ footer picture img {
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
     gap: 60px;
     padding: 40px 0;
 
 }
 
-.footer-container .top {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-
-
-}
-
-
-
 .footer-container section,
-.footer-facts-stuff ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.footer-facts-stuff ul,
+footer .contact,
+footer .company-info,
+footer .social-media-stuff {
+    gap: 20px;
 
 }
 
 footer .contact {
-    display: flex;
     flex-direction: row;
-    gap: 20px;
+    /*gap: 20px;*/
 }
 
 footer .contact img {
@@ -251,17 +239,12 @@ footer .contact img {
 }
 
 footer .company-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    /*gap: 20px;*/
 }
 
 
 footer .social-media-stuff {
-    display: flex;
-    flex-direction: column;
-
-    gap: 20px;
+    /*gap: 20px;*/
 }
 
 footer .social-media-stuff .sm-handles {
@@ -278,8 +261,6 @@ footer .social-media-stuff .sm-handles i {
     border-radius: 50%;
 
 }
-
-
 
 
 
@@ -307,7 +288,6 @@ footer .social-media-stuff .sm-handles i {
     }
 
     .landing-page .landing-container .landing-text {
-
         gap: 15px;
         width: 40%;
     }
@@ -316,13 +296,6 @@ footer .social-media-stuff .sm-handles i {
         width: 40%;
     }
 
-    .landing-page .heading {
-        /*font-size: clamp(22px, 2vw, 30px);*/
-    }
-
-    .landing-page .landing-container .landing-text .body-copy {
-        font-size: clamp(14px, 2.5vw, 15px)
-    }
 
     .landing-page .landing-container .landing-img picture {
         display: flex;
@@ -331,7 +304,7 @@ footer .social-media-stuff .sm-handles i {
 
     .btn-pink {
         padding: 12px 36px;
-        font-size: 12px;
+        /*font-size: 12px;*/
 
     }
 
@@ -361,7 +334,6 @@ footer .social-media-stuff .sm-handles i {
 
     .card-text .body-copy {
         width: clamp(30ch, 40vw, 50ch);
-        font-size: 14px;
         color: var(--pen);
     }
 
@@ -404,7 +376,7 @@ footer .social-media-stuff .sm-handles i {
     }
 
     footer .social-media-stuff {
-         grid-column: 1/-1;
+        grid-column: 1/-1;
         justify-content: center;
         align-items: center;
     }
@@ -416,7 +388,7 @@ footer .social-media-stuff .sm-handles i {
 
 @media (min-width: 1000px) {
 
-  .footer-container {
+    .footer-container {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
 
@@ -437,23 +409,28 @@ footer .social-media-stuff .sm-handles i {
     }
 
     footer .social-media-stuff {
-         grid-column: 3;
-               justify-content: space-between;
+        grid-column: 3;
+        justify-content: space-between;
         align-items: end;
     }
+
     footer .footer-container .social-media-stuff .sm-handles i {
-      font-size:  1.25rem;
+        font-size: 1.25rem;
     }
 
-        .footer-container .footer-facts-stuff {
+    .footer-container .footer-facts-stuff {
         gap: 60px;
 
     }
 
-
     footer span {
-      display: block;
-      margin-top: 10px
+        display: block;
+        margin-top: 10px
+    }
+
+    footer .social-media-stuff .copy-right {
+      text-align: end;
+
     }
 
 
