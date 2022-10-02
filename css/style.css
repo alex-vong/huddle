@@ -104,6 +104,7 @@ masthead picture img {
 
 .landing-container .landing-text .body-copy {
     font-size: 20px;
+    font-size: clamp(16px, 1.75vw, 18px);
     font-weight: 500;
 
 }
@@ -113,6 +114,7 @@ masthead picture img {
     border: none;
     padding: 18px 60px;
     font-size: 16px;
+    font-size: clamp(14px, 1.5vw, 16px);
 }
 
 .landing-container a,
@@ -120,7 +122,6 @@ masthead picture img {
     display: flex;
     align-self: center;
     color: var(--white);
-
 }
 
 /*card grid*/
