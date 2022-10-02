@@ -69,13 +69,14 @@ masthead picture img {
 }
 
 .landing-container, .landing-container .landing-text, .card-grid-container, card, .cta-container, .card-text {
+.landing-container,
+.card-text {
     display: flex;
     flex-direction: column;
 }
 
 
 /*landing*/
-
 .landing-page {
     background: #edfbfe url("../images/bg-hero-mobile.svg") no-repeat center center / cover;
     position: relative;
